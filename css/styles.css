@@ -6,6 +6,7 @@
     --color-active: #2196F3;
     --color-background: #F5F4FA;
     --color-hero-footer: #2F303A;
+    --color-border: #EEEEEE;
     }
 
 *,
@@ -16,6 +17,11 @@
 
 h1, h2, h3, p {
     margin: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -87,10 +93,6 @@ body {
     justify-content: center;
     margin-bottom: 50px;
     gap: 8px;
-}
-
-.service-button {
-   padding: 6px 22px;
 }
 
 .header-nav {
@@ -169,7 +171,12 @@ body {
     color: var(--color-active);
 }
 
+.posts-studio {
+    width: 270px;
+}
+
 .hero-section {
+    text-align: center;
     background-color: var(--color-hero-footer);
 }
 .hero-title {
@@ -195,9 +202,6 @@ body {
     cursor: pointer;
     border-radius: 4px;
     border: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px 32px;
 }
 
@@ -215,6 +219,8 @@ body {
 }
 
 .service-button {
+    min-width: 73px;
+    padding: 6px 22px;
     color: var(--color-primary);
     background-color: var(--color-background);
     font-family: inherit;
@@ -268,7 +274,7 @@ body {
 }
 
 .team-info {
-    padding: 30px 70px;
+    padding: 30px 32px;
 }
 
 .post-teams {
@@ -328,18 +334,23 @@ body {
 }
 
 .services-card {
-    border-bottom: 1px solid #EEEEEE;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
 }
 
 .services-info {
     padding: 20px 24px;
 }
 
-.address-line {
+.address-line:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+/* .address-line {
     display: flex;
     flex-direction: column;
     gap: 9px;
-}
+} */
 
 .address {
     font-style: normal;

@@ -335,22 +335,18 @@ body {
 
 .services-card {
     background-color: var(--color-white);
-    border: 1px solid var(--color-border);
 }
 
 .services-info {
     padding: 20px 24px;
-}
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    border-left: 1px solid var(--color-border);}
+
 
 .address-line:not(:last-child) {
     margin-bottom: 9px;
 }
-
-/* .address-line {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-} */
 
 .address {
     font-style: normal;
